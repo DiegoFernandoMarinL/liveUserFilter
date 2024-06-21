@@ -1,15 +1,17 @@
-export const infoUser = ({avatar,description,id,name_full})=>{
+export const infoUser = (data)=>{
     let plantilla = "";
-    plantilla += /*html*/`
-        <article class="info__users">
-            <div class="image__users">
-                <img src="${avatar}">
-            </div>
-            <div class="data__users">
-                <h3>${name_full}</h3>
-                <p>${description}</p>
-            </div>
-        </article>
-       `;
+    for (const value of Object.values(data)) {
+        plantilla += /*html*/`
+            <article class="info__users">
+                <div class="image__users">
+                    <img src="${value.avatar}">
+                </div>
+                <div class="data__users">
+                    <h3>${value.name_full}</h3>
+                    <p>${value.description}</p>
+                </div>
+            </article>
+           `;
+    }
     return plantilla;
 }
