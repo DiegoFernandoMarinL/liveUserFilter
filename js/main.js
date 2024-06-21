@@ -7,6 +7,7 @@ let input__search = document.querySelector(".input__search");
 let searchUsers = async e=> {
     let dataSearch = e.target.value;
     let data = await validaUser(dataSearch);
+    //console.log(data);
     info__allUsers.innerHTML = data;
 }
 
