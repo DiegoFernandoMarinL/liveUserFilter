@@ -23,10 +23,10 @@ main{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #ffffff;
 }
-.button__search {
+.input__search {
     padding-top: 20px;
 }
-.button__search input{
+.input__search input{
     width: 100%;
     border-radius: 20px;
     height: 40px;
