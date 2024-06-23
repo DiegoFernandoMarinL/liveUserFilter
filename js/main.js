@@ -11,7 +11,7 @@ let searchUsers = async e=> {
     info__allUsers.innerHTML = data;
 }
 
-input__search.addEventListener("change", searchUsers);
+input__search.addEventListener("input", searchUsers);
 
 info__allUsers.innerHTML = await getUser();
 
